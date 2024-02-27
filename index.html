@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrix Multiplication Tool</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <h4>Select the Matrix Size:</h4>
+
+    <!-- Matrix A -->
+    <div class="input-container">
+        <b>Matrix A:</b>
+        <input type="number" id="Arow" placeholder="Rows">
+        <b>×</b>
+        <input type="number" id="Acolumn" placeholder="Columns">
+    </div>
+
+    <!-- Matrix B -->
+    <div class="input-container">
+        <b>Matrix B:</b>
+        <input type="number" id="Brow" placeholder="Rows">
+        <b>×</b>
+        <input type="number" id="Bcolumn" placeholder="Columns">
+    </div>
+
+    <!-- Submit Button for Step 1 -->
+    <button onclick="generateMatrixInput()">Submit</button>
+
+    <!-- Dynamic Matrix Input Boxes -->
+    <div class="matrix-container">
+        <div class="matrix-box" id="matrixAInputs">
+            <!-- Matrix A inputs will be inserted here -->
+        </div>
+
+        <div class="matrix-box" id="matrixBInputs">
+            <!-- Matrix B inputs will be inserted here -->
+        </div>
+    </div>
+
+    <!-- Submit Button for Step 2 -->
+    <button onclick="calculateResult()">Calculate Result</button>
+
+    <!-- Output Section -->
+    <div id="result" class="matrix-box">
+        <!-- Result matrix will be displayed here -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
